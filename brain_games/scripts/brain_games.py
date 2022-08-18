@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 from colorama import Fore
 from brain_games.cli import welcome_user
 
