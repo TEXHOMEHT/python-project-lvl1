@@ -25,9 +25,9 @@ def parity_check():
             False
             if answer == 'yes':
                 correct_answer = str('no')
-                print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, name!")
+                print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
                 break
             else:
                 correct_answer = str('yes')
-                print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, name!")
+                print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
                 break
