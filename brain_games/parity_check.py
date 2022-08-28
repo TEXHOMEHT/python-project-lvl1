@@ -4,30 +4,30 @@ import prompt
 
 
 def parity_check():
-    print(Fore.GREEN + 'Welcome to the Brain Games!')  #Greet user
-    name = prompt.string('May I have your name? ')  #Asking user's name
+    print(Fore.GREEN + 'Welcome to the Brain Games!')  # Greet player
+    name = prompt.string('May I have your name? ')  # Asking player's name
     print(f'Hello, {name}!')
-    random_number = randint(1, 100)
-    print('Answer "yes" if the number is even, otherwise answer "no".')  #Define game rules
-    i = 0  #Count of the game rounds
+    # Define game rules
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+
+    i = 0  # Count of the game rounds
     while True:
-        print(f'Question: {random_number}') #
-        answer = input('Your answer: ') #Asking user's answer
-        if random_number % 2 == 0 and answer == 'yes' or random_number % 2 != 0 and answer == 'no':  #User's answer is correct
-            True
+        random_number = randint(1, 100)
+        print(f'Question: {random_number}')
+
+        answer = input('Your answer: ')  # Asking player's answer
+        is_answer_correct = (random_number % 2 == 0 and answer == 'yes'
+                             or random_number % 2 != 0 and answer == 'no')
+
+        if is_answer_correct:  # User's answer is correct
             print('Correct!')
             i += 1
-            random_number = randint(1, 100)
-            if i == 3:
-                print('Congratulations, name!')
-                break
-        else:  #User's answer is incorrect
-            False
-            if answer == 'yes':
-                correct_answer = str('no')
-                print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
-                break
-            else:
-                correct_answer = str('yes')
-                print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!")
-                break
+        else:  # Player's answer is incorrect
+            correct_answer = 'no' if answer == 'yes' else 'yes'
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'."
+                  f"\nLet's try again, {name}!")
+            break
+        if i == 3:
+            print(f'Congratulations, {name}!')
+            break
