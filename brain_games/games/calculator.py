@@ -11,7 +11,7 @@ def calculator():
 
     i = 0  # Count of the game rounds
     while True:
-        operaion = (randint(1, 4))  # Random arithmetic action
+        operaion = (randint(1, 3))  # Random arithmetic action
         first_number = randint(1, 100)
         second_number = randint(1, 100)
         if operaion == 1:  # Addition
@@ -23,9 +23,6 @@ def calculator():
         if operaion == 3:  # Subtraction
             arithmetic_action = '-'
             correct_answer = (first_number - second_number)
-        if operaion == 4:  # Integer division
-            arithmetic_action = '//'
-            correct_answer = int(first_number // second_number)
 
         print(f'Question: {first_number} {arithmetic_action} {second_number}')
         answer = (input('Your answer: '))  # Asking player's answer
