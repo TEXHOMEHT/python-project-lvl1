@@ -7,7 +7,7 @@ def arithmetic_progression():
     print(Fore.GREEN + 'Welcome to the Brain Games!')  # Greet player
     name = prompt.string('May I have your name? ')  # Asking player's name
     print(f'Hello, {name}!')
-    print('What is the result of the expression?')  # Define game rules
+    print('What number is missing in the progression?')  # Define game rules
 
     i = 0  # Count of the game rounds
     while True:
