@@ -34,8 +34,8 @@ def arithmetic_progression():
             i += 1
         else:  # Player's answer is incorrect
             print(f"'{answer}' is wrong answer ;(. "
-                f"Correct answer was '{correct_answer}'."
-                f"\nLet's try again, {name}!")
+                  f"Correct answer was '{correct_answer}'."
+                  f"\nLet's try again, {name}!")
             break
 
         if i == 3:
