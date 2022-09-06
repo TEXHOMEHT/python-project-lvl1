@@ -11,25 +11,26 @@ def prime():
     # Define game rules
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
-    condition = True
     i = 0  # Count of the game rounds
     while True:
         number = randint(2, 100)
-        n = 2
-        while n <= sqrt(number):
-            if number % n == 0:
-                condition = False
-                break
-            n += n
+        n = 0
+        for k in range(2, number // 2+1):
+            if number % k == 0:
+                n += n
+        if n <= 0:
+            is_prime = True
+        else:
+            is_prime = False
 
         print(f'Question: {number}')
 
         answer = input('Your answer: ')  # Asking player's answer
 
-        is_answer_correct = (condition == True and answer == 'yes'
-                             or condition == False and answer == 'no')
+        is_correct = True if (is_prime and answer == 'yes'
+                              or not is_prime and answer == "no") else False
 
-        if is_answer_correct:  # Player's answer is correct
+        if is_correct:  # Player's answer is correct
             print('Correct!')
             i += 1
         else:  # Player's answer is incorrect
