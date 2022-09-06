@@ -13,15 +13,14 @@ def prime():
 
     i = 0  # Count of the game rounds
     while True:
+        is_prime = True
         number = randint(2, 100)
-        n = 0
-        for k in range(2, number // 2+1):
-            if number % k == 0:
-                n += n
-        if n <= 0:
-            is_prime = True
-        else:
-            is_prime = False
+        n = 2
+        while n <= sqrt(number):
+            if number % n == 0:
+                is_prime = False
+                break
+            n += 1
 
         print(f'Question: {number}')
 
