@@ -42,6 +42,3 @@ def prime():
         if i == 3:
             print(f'Congratulations, {name}!')
             break
-
-
-prime()
