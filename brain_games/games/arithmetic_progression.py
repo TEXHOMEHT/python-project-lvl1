@@ -14,11 +14,11 @@ def arithmetic_progression():
         first_number = randint(1, 100)
         n = randint(2, 10)
         count = randint(5, 10)
-        answer_index = randint(1, count)
+        answer_index = randint(1, count - 1)
         question = f"{first_number}"
         correct_answer = ""
 
-        for num in range(1, count - 1):
+        for num in range(1, count):
             first_number += n
             if num == answer_index:
                 question = f"{question} .."
