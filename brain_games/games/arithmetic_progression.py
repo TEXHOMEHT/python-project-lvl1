@@ -18,7 +18,7 @@ def arithmetic_progression():
         question = f"{first_number}"
         correct_answer = ""
 
-        for num in range(1, count):
+        for num in range(1, count - 1):
             first_number += n
             if num == answer_index:
                 question = f"{question} .."
