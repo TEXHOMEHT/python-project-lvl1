@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.calculator import calculator
+from brain_games.logic import launch_game
+from brain_games.games import calculator
 
 
 def main():
-    calculator()
+    launch_game(calculator)
 
 
 if __name__ == '__main__':
