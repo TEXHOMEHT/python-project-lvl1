@@ -39,7 +39,7 @@ In order to play you should run the following specific command to each game:
 [![asciicast](https://asciinema.org/a/mBzKroDd73S9z1i0IbRWuyiJx.svg)](https://asciinema.org/a/mBzKroDd73S9z1i0IbRWuyiJx)
 
 ## Install
-1. Clone repository <git clone https://github.com/RamiGaggi/edu-brain-games.git>
-2. Go to working directory <cd edu-brain-games>
-3. Install dependencies <make install>
-4. Install as a package <make package-install> or use <poetry run>
+1. Clone repository `git clone https://github.com/TEXHOMEHT/python-project-lvl1`
+2. Go to working directory `cd edu-brain-games`
+3. Install dependencies `make install`
+4. Install as a package `make package-install` or use `poetry run`
