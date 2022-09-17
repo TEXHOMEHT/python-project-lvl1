@@ -13,7 +13,7 @@ def launch_game(game):
     i = 0  # Count of the game rounds
     while True:
         question, correct_answer = game.generate_question_answer()
-        print(question, end='')
+        print(f'Question: {question}', end='')
         user_answer = input('\nYour answer: ')  # Asking player's answer
         if user_answer == str(correct_answer):  # Player's answer is correct
             print('Correct!')

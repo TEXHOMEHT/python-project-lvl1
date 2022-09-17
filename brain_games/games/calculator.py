@@ -17,5 +17,5 @@ def generate_question_answer():
     if operaion == 3:  # Subtraction
         arithmetic_action = '-'
         correct_answer = (first_number - second_number)
-    question = f'Question: {first_number} {arithmetic_action} {second_number}'
+    question = f'{first_number} {arithmetic_action} {second_number}'
     return question, correct_answer

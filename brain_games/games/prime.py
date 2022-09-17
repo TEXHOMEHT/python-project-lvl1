@@ -13,6 +13,6 @@ def generate_question_answer():
     else:
         correct_answer = "yes"
 
-        question = f'Question: {number}'
+        question = f'{number}'
 
     return question, correct_answer
