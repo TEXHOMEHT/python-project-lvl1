@@ -40,6 +40,6 @@ In order to play you should run the following specific command to each game:
 
 ## Install
 1. Clone repository `git clone https://github.com/TEXHOMEHT/python-project-lvl1`
-2. Go to working directory `cd edu-brain-games`
+2. Go to working directory `cd python-project-lvl1`
 3. Install dependencies `make install`
 4. Install as a package `make package-install` or use `poetry run`
